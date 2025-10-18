@@ -1,0 +1,162 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:monocraft;
+    box-sizing:border-box;
+<<<<<<< HEAD
+}
+body{
+    background:linear-gradient(to bottom right, rgba(167, 29, 19, 0.849) , rgba(107, 21, 94, 0.815));
+    height:100vh;
+    padding:50px;
+}
+p{
+    color: rgb(37, 37, 37);
+}
+button{
+    padding:10px 20px;
+    outline:none;
+    border:none;
+    border-radius:50px;
+    background-color:white;
+    font-size:20px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.133);
+    transition:0.3s ease;
+    color: rgb(37, 37, 37);
+    cursor:pointer;
+}
+button:hover{
+    transform:translate(0, -2px);
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.212);
+    transition:0.3s ease;
+}
+.buttonBox{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    justify-content:space-between;
+    align-items:center;
+}
+.diceImage{
+    border-radius:20px;
+    width:75%;
+    transition:0.3s ease;
+}
+.diceImage:hover{
+    width:77%;
+}
+.diceImage.hidden{
+    opacity:none;
+    visibility:hidden;
+}
+.currentScore{
+    font-size: 50px;
+}
+.savedScore{
+    color:rgba(165, 31, 71, 0.856);
+    font-size:75px;
+}
+.gameBox{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    border:none;
+    border-radius:20px;
+    background-color: rgba(255, 255, 255, 0.459);
+    overflow:hidden;
+}
+.playerBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:100%;
+    justify-content:space-between;
+    padding:5vw;
+    transition:0.5s ease;
+}
+.currentScoreBox{
+    border-radius:20px;
+    border:none;
+    padding:20px 100px;
+    background-color:rgba(165, 31, 71, 0.856);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.currentScoreBox p{
+    color:white;
+}
+.currentTitle{
+    margin-top:none;
+    color:white;
+    gap:20px;
+    margin-bottom:40px;
+}
+.playerBox.active{
+    background-color:rgba(255, 255, 255, 0.629);
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.507);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+}
+.overlay.hidden, .winnerBox.hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.winnerBox{
+    display:flex;
+    flex-direction:column;
+    font-size:30px;
+    gap:20px;
+    position:fixed;
+    padding:20px 100px;
+    z-index:100;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius:20px;
+    background-color:white;
+    align-items:center;
+}
+.newGameSecond{
+    background-color:green;
+    color:white;
+
+}
+@media (max-width: 1000px) {
+  .currentScore, .playerTitle,.currentTitle {
+    font-size: 30px;
+  }
+  .savedScore {
+    font-size: 55px;
+  }
+  .currentScoreBox {
+    padding: 10px 50px;
+  }
+  .diceImage{
+    width:45%;
+   }
+   .diceImage:hover{
+    width:47%;
+   }
+   button{
+    padding:10px 20px;
+    font-size:15px;
+}
+=======
+>>>>>>> 99b141c14712d3716a526d983e95d1aac8b7e40d
+}
