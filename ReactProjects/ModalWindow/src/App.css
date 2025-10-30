@@ -4,3 +4,66 @@
   font-family:monocraft;
   box-sizing:border-box;
 }
+body{
+  display:flex;
+  flex-direction:column;
+  padding:30px;
+  width:100%;
+}
+.buttonBox button{
+  padding:10px 20px;
+  border:none;
+  border-radius:var(--btnRadius);
+  outline:hidden;
+  cursor:pointer;
+  background:linear-gradient(to right, rgb(1, 167, 75), rgb(95, 209, 133));
+  color:white;
+}
+.buttonsBox{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+}
+.modalWindow{
+  position:fixed;
+  border-radius:var(--boxRadius);
+  color:black;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index:100;
+  transition:0.3s ease;
+}
+.modalWindow.hidden{
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-51%);
+}
+.exitBtn{
+  cursor:pointer;
+}
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:10;
+}
+.modalWindowBox{
+  position:fixed;
+  opacity:0;
+  visibility:hidden;
+  border-radius:20px;
+  background-color:white;
+  left:50%;
+  top:50%;
+  transform:translateY(-50%);
+  transition:0.3s ease;
+}
+.modalWindowBox.show{
+  visibility:visible;
+  opacity:1;
+  transform:translateY(-51%);
+}
