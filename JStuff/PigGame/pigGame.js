@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict"
 //shortcuts
 const currentScoreP1 = document.querySelector(".currentScore.player0");
@@ -70,7 +69,7 @@ if(playing){
     document.querySelector(`.currentScore.player${activePlayer}`).textContent = 0;
     points[activePlayer] += currPoints;
     document.querySelector(`.savedScore.player${activePlayer}`).textContent = points[activePlayer];
-    winner = points[activePlayer] >= 10 ? `player${activePlayer}` : "";
+    winner = points[activePlayer] >= 50 ? `player${activePlayer}` : "";
     if(winner){
         playing=false;
         winner = "Player " + `${activePlayer + 1}`;
@@ -85,6 +84,3 @@ if(playing){
     }
     currPoints = 0;
 }})
-=======
-"use strict"
->>>>>>> 99b141c14712d3716a526d983e95d1aac8b7e40d
