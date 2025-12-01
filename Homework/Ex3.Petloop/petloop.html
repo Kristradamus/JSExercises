@@ -1,48 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\petloop.css">
-    <link rel="icon" type="image\svg+xml" href=".\imgs\logo.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./petloop.css" />
+    <link rel="icon" type="image/svg+xml" href="./imgs/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
     <title>Petloop</title>
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <p><i class="fa-solid fa-otter"></i>Petloop</p>
-        </div>
-        <ul class="menuBox">
-            <li><a href="#hero"><i class="fa-solid fa-house-user"></i><p>Home</p></a></li>
-            <li><a href="#mainContent"><i class="fa-solid fa-shield-dog"></i><p>Animals</p></a></li>
-            <li><a href="#aboutUs"><i class="fa-solid fa-users"></i><p>About us</p></a></li>
-            <li><a href="#footer"><i class="fa-solid fa-phone"></i><p>Contacts</p></a></li>
-        </ul>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <div class="logo" onClick="window.scrollTo(0, 0);">
+        <p><i class="fa-solid fa-otter"></i>Petloop</p>
+      </div>
+      <ul class="menuBox">
+        <li>
+          <a onClick="window.scrollTo(0, 0);"
+            ><i class="fa-solid fa-house-user"></i>
+            <p>Home</p></a
+          >
+        </li>
+        <li>
+          <a href="#mainContent"
+            ><i class="fa-solid fa-shield-dog"></i>
+            <p>Animals</p></a
+          >
+        </li>
+        <li>
+          <a href="#comparisonTable"
+            ><i class="fa-solid fa-paw"></i>
+            <p>Compare</p></a
+          >
+        </li>
+        <li>
+          <a href="#footer"
+            ><i class="fa-solid fa-phone"></i>
+            <p>Contacts</p></a
+          >
+        </li>
+      </ul>
     </div>
-    <div id="hero" class="heroSection">
-        <div class="heroSectionOverlay">
-        <h1 class="mainTitle">Your Faithful Friends</h1>
-        <h3 class="subTitle"> Discover the world of pets — learn how to care for them, understand their personalities, 
-             and find the perfect companion for your lifestyle.</h3>
-        <div class="heroSectionBtns">
-            <button class="learnMoreBtn"><p>Learn more</p><i class="fa-solid fa-arrow-right"></i></button>
-            <button class="compareBtn">Compare</button>
-        </div>
-        </div>
-    </div>
-    <div id="mainContent" class="mainContentRow">
 
-    </div>
-    <div class="comparisonRow">
-        <h3 class="comparisonMainTitle">Comparison Table</h3>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-paw"></i>
-            <hr>
+    <!-------------------------------------HERO-SECTION---------------------------------->
+    <div id="hero" class="heroSection">
+      <div class="heroSectionOverlay">
+        <h1 class="mainTitle">Your Faithful Friends</h1>
+        <h3 class="subTitle">
+          Discover the world of pets — learn how to care for them, understand
+          their personalities, and find the perfect companion for your
+          lifestyle.
+        </h3>
+        <div class="heroSectionBtns">
+          <button
+            class="learnMoreBtn"
+            onClick="window.location.href='#mainContent'"
+          >
+            <p>Learn more <i class="fa-solid fa-arrow-right"></i></p>
+          </button>
+          <button
+            class="compareBtn"
+            onClick="window.location.href='#comparisonTable'"
+          >
+            <p>Compare</p>
+          </button>
         </div>
-        <p class="comparisonSubTitle">See the differences in wide variety of pets.</p>
-    <table class="petTable">
+      </div>
+    </div>
+
+    <!-------------------------------------BENEFITS-SECTION---------------------------------->
+    <div id="mainContent" class="benefitsRow">
+      <div class="titleSection">
+        <h3 class="comparisonMainTitle">Learn more about animals</h3>
+        <div class="seperator">
+          <hr />
+          <i class="fa-solid fa-users"></i>
+          <hr />
+        </div>
+        <p class="comparisonSubTitle">
+          How to take care of them and what they can offer to you.
+        </p>
+      </div>
+      <ul class="benefitsUl">
+        <li class="mentalHealthBox benefitBox">
+          <i class="fa-solid fa-brain"></i>
+          <div class="benefitsTextBox">
+            <p class="benefitTitle">Boosts mental health</p>
+            <p class="benefitText">
+              Manage anxiety and depression and provides emotional grounding.
+            </p>
+          </div>
+        </li>
+        <li class="socialConnectionsBox benefitBox">
+          <i class="fa-solid fa-handshake"></i>
+          <div class="benefitsTextBox">
+            <p class="benefitTitle">Enhances Social Connections</p>
+            <p class="benefitText">
+              They help spark conversation and new friendships.
+            </p>
+          </div>
+        </li>
+        <li class="heartHealthBox benefitBox">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <div class="benefitsTextBox">
+            <p class="benefitTitle">Improved Heart Health</p>
+            <p class="benefitText">
+              Lower blood pressure, cholesterol, and triglyceride levels.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <!----------------------------POPULAR-PETS------------------------>
+      <div class="popularPetsBox">
+        <div class="titleBox">
+          <h2 class="popularPetsTitle">Popular pets</h2>
+          <p class="popularPetsSubTitle">
+            See some of the most popular pets out there.
+          </p>
+        </div>
+        <ul class="popularPetsUl">
+          <li class="popularPet">
+            <img src="./imgs/dog.jpg" />
+            <div class="animalDescriptionBox">
+              <div class="animalTitleBox">
+                <h2 class="animalTitle">Dogs</h2>
+                <div class="animalRatingBox">
+                  <p class="animalRating">Top 1</p>
+                </div>
+              </div>
+              <p>
+                Dogs are among the most popular pets. They are loyal,
+                intelligent, and love the company of people.
+              </p>
+              <div class="characteristicsBox">
+                <h3 class="characteristicsTitle">Characteristics:</h3>
+                <ul class="characteristics">
+                  <li><p>Loyal</p></li>
+                  <li><p>Energetic</p></li>
+                  <li><p>Friendly</p></li>
+                  <li><p>Trainable</p></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="popularPet">
+            <img src="./imgs/cat.jpg" />
+            <div class="animalDescriptionBox">
+              <div class="animalTitleBox">
+                <h2 class="animalTitle">Cats</h2>
+                <div class="animalRatingBox">
+                  <p class="animalRating">Top 2</p>
+                </div>
+              </div>
+              <p>
+                Cats are independent yet gentle animals. They are perfect for
+                people seeking a calm and loving companion.
+              </p>
+              <div class="characteristicsBox">
+                <h3 class="characteristicsTitle">Characteristics:</h3>
+                <ul class="characteristics">
+                  <li><p>Independent</p></li>
+                  <li><p>Clean</p></li>
+                  <li><p>Quiet</p></li>
+                  <li><p>Gentle</p></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="popularPet">
+            <img src="./imgs/rabbit.jpg" />
+            <div class="animalDescriptionBox">
+              <div class="animalTitleBox">
+                <h2 class="animalTitle">Rabbits</h2>
+                <div class="animalRatingBox">
+                  <p class="animalRating">Top 5</p>
+                </div>
+              </div>
+              <p>
+                Rabbits are gentle and sociable pets that can be litter-trained
+                and enjoy human interaction.
+              </p>
+              <div class="characteristicsBox">
+                <h3 class="characteristicsTitle">Characteristics:</h3>
+                <ul class="characteristics">
+                  <li><p>Gentle</p></li>
+                  <li><p>Sociable</p></li>
+                  <li><p>Quiet</p></li>
+                  <li><p>Playful</p></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="popularPet">
+            <img src="./imgs/parrot.jpg" alt="Parrot" />
+            <div class="animalDescriptionBox">
+              <div class="animalTitleBox">
+                <h2 class="animalTitle">Parrots</h2>
+                <div class="animalRatingBox">
+                  <p class="animalRating">Top 10</p>
+                </div>
+              </div>
+              <p>
+                Birds are intelligent and social creatures that can learn to
+                talk and perform tricks.
+              </p>
+              <div class="characteristicsBox">
+                <h3 class="characteristicsTitle">Characteristics:</h3>
+                <ul class="characteristics">
+                  <li><p>Intelligent</p></li>
+                  <li><p>Colorful</p></li>
+                  <li><p>Social</p></li>
+                  <li><p>Long-lived</p></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!---------------ABOUT-PETS------------------------>
+      <div class="aboutPets">
+        <h3 class="aboutPetsTitle">About pets</h3>
+        <p class="aboutPetsText">
+          Pets are animals that people keep in their homes for companionship and
+          entertainment. They have played an important role in human life for
+          thousands of years. The most popular pets include dogs, cats, birds,
+          fish, hamsters, and rabbits. Each of these animals has unique
+          characteristics and care requirements. Scientific studies show that
+          pets can reduce stress, improve mood, and even contribute to better
+          physical health for their owners.
+
+          <em
+            >Source: Adapted from Wikipedia and other educational resources</em
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-------------------------------------COMPARISON-SECTION---------------------------------->
+    <div id="comparisonTable" class="comparisonRow">
+      <div class="titleSection"></div>
+      <h3 class="comparisonMainTitle">Comparison Table</h3>
+      <div class="seperator">
+        <hr />
+        <i class="fa-solid fa-paw"></i>
+        <hr />
+      </div>
+      <p class="comparisonSubTitle">
+        See the differences in wide variety of pets.
+      </p>
+      <table class="petTable">
         <thead>
           <tr>
             <th>Pet</th>
@@ -128,41 +342,77 @@
           </tr>
         </tbody>
       </table>
+      <p class="comparisonBottomText">
+        * Data is approximate and may vary depending on breed and individual
+        conditions
+      </p>
     </div>
-    <div id="aboutUs" class="aboutUsRow">
-        <div><p></p></div>
-    </div>
+
+    <!-------------------------------------FOOTER-SECTION---------------------------------->
     <div id="footer" class="footer">
-        <div class="footerTop">
-            <div class="footerMessage title">
-                <h3><i class="fa-solid fa-otter"></i> Petloop</h3>
-                <p>Here at "Petloop we tell you only what you need to hear and we give you what you need. 
-                   Your time matters so let us support you trough your everyday life."</p>
-            </div>
-            <div class="socialsBox">
-                <div class="contacts title">
-                    <h3>Contacts:</h3>
-                    <p><i class="fa-solid fa-envelope"></i>KrissKrastev06@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+359 898 764 348</p>
-                </div>
-                <div class="socialMedia title">
-                    <h3>Social Media:</h3>
-                    <div class="socialMediaLinks">
-                        <div><a href="https://www.instagram.com/kriskrustev/" target="_blank" class="instagramLink">
-                            <i class="fa-brands fa-instagram"></i></a></div>
-                        <div><a href="https://www.facebook.com/kriskrustev.32/" target="_blank" class="facebookLink">
-                            <i class="fa-brands fa-facebook-f"></i></a></div>
-                        <div><a href="https://www.youtube.com/@kristiankrustev3027" target="_blank" class="youtubeLink">
-                            <i class="fa-brands fa-youtube"></i></a></div>
-                    </div>
-                </div>
-            </div>
+      <div class="footerTop">
+        <div class="footerMessage title">
+          <h3><i class="fa-solid fa-otter"></i> Petloop</h3>
+          <p>
+            Here at "Petloop we tell you only what you need to hear and we give
+            you what you need. Your time matters so let us support you trough
+            your everyday life."
+          </p>
         </div>
-        <div class="footerBottom">
-            <p><i class="fa-regular fa-copyright"></i>2025 Petloop | All rights reserved | 
-                Created by <a href="https://github.com/Kristradamus" target="_blank" class="githubLink">
-                Kristradamus</a></p>
+        <div class="socialsBox">
+          <div class="contacts title">
+            <h3>Contacts:</h3>
+            <p><i class="fa-solid fa-envelope"></i>KrissKrastev06@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+359 898 764 348</p>
+          </div>
+          <div class="socialMedia title">
+            <h3>Social Media:</h3>
+            <div class="socialMediaLinks">
+              <div>
+                <a
+                  href="https://www.instagram.com/kriskrustev/"
+                  target="_blank"
+                  class="instagramLink"
+                >
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <div>
+                <a
+                  href="https://www.facebook.com/kriskrustev.32/"
+                  target="_blank"
+                  class="facebookLink"
+                >
+                  <i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/@kristiankrustev3027"
+                  target="_blank"
+                  class="youtubeLink"
+                >
+                  <i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          <i class="fa-regular fa-copyright"></i>2025 Petloop | All rights
+          reserved | Created by
+          <a
+            href="https://github.com/Kristradamus"
+            target="_blank"
+            class="githubLink"
+          >
+            Kristradamus</a
+          >
+        </p>
+      </div>
     </div>
-</body>
+    <script src="./petloop.js"></script>
+  </body>
 </html>

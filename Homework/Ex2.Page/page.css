@@ -16,6 +16,12 @@
     --underlineWay:left;
     --font-size:20px;
 }
+a{
+    all:unset;
+}
+a{
+    cursor:pointer;
+}
 .heroBox{
     position:relative;
     overflow:hidden;
@@ -56,6 +62,11 @@
 }
 .menuBox li{
     font-size:calc(var(--fontSize) - 5px);
+}
+.menuBox li a{
+    display:flex;
+    flex-direction:row;
+    gap:var(--gap);
 }
 .menuBox li::after,
 .logo::after{
@@ -141,4 +152,22 @@
 .mainContentParagraph1{
     padding:0px 50px;
     text-align:justify;
+}
+
+/*-------------------------------FOOTER-----------------------------------*/
+.footer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.footerTop{
+
+}
+.footerBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding:15px;
+  align-items: center;
 }
